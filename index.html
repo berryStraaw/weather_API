@@ -8,6 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+        <form novalidate>
+            <p>
+                <label for="city">
+                    <span>Please enter a city name:</span>
+                    <input type="text" id="city" name="city" required>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+            </p>
+            <button>Submit</button>
+            <span class="success" aria-live="polite"></span>
+        </form>
+
+        <span class="country"></span>
+        <span class="city"></span>
     </body>
 </html>
