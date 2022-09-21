@@ -50,7 +50,7 @@ async function callApi(){
     //http://api.openweathermap.org/data/2.5/weather?q=London&APPID=6273be273b9a4f71422e771ee538b543
     const key='6273be273b9a4f71422e771ee538b543'
     let cityName=city.value;
-    let link=`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${key}`;
+    let link=`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${key}&units=metric`;
     try{
         let response= await fetch(link,{mode:"cors"});
         let cityInfo=await response.json();
